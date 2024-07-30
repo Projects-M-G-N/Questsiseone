@@ -1,29 +1,45 @@
-body {
-    font-family: 'Arial', sans-serif;
+:root {
+    --cor-branca: #ffffff;
+    --cor-preta: #333333;
+    --cor-azul-escuro: #050783;
+    --cor-azul-medio: #0077b6;
+    --cor-azul-claro: #007bff;
+    --cor-cinza-claro: #f9f9f9;
+    --cor-cinza-escuro: #333333;
+    --cor-acento: #007bff;
+    --cor-hover: #e3e3e3;
+}
+
+body, html {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    height: 100%;
     display: flex;
     flex-direction: column;
 }
 
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--cor-branca);
+    color: var(--cor-preta);
+    flex: 1;
+}
+
 a {
-    
     text-decoration: none;
-    color: #333;
+    color: var(--cor-branca);
     transition: color 0.3s;
 }
 
 a:hover {
-    text-decoration: underline;
-    color: #007bff;
+    text-decoration: none;
+    scale: 1.1;
 }
 
 header {
-    background-color: #003cff;
-    color: white;
-    padding: 20px 30px;
+    background-color: var(--cor-azul-escuro);
+    color: var(--cor-branca);
+    padding: 10px 20px;
     display: flex;
     align-items: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -31,40 +47,47 @@ header {
     width: 100%;
     top: 0;
     left: 0;
-    
+    box-sizing: border-box;
+}
+
+header .logo {
+    margin: 0;
 }
 
 header .logo h1 {
-    margin: 0;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
+header nav {
+    margin-left: auto;
+    display: flex;
+    gap: 10px;
+}
+
 header nav a {
-    text-align: right;
+    font-weight: bold;
+    color: var(--cor-branca);
+    padding: 5px 10px;
+}
+
+header nav a:hover {
     text-decoration: none;
-    color: #fff;
-   
+    color: var(--cor-branca);
 }
-
-header nav a:hover{
-    text-decoration: none
-    ;
-}
-
-
 
 main {
     flex: 1;
+    display: flex;
+    flex-direction: column;
     margin-top: 80px;
     padding-bottom: 40px;
 }
 
 .hero {
-    background-color: rgb(27, 39, 206);
-    color: rgb(255, 255, 255);
+    background-color: var(--cor-azul-medio);
+    color: var(--cor-branca);
     padding: 100px 5%;
-    margin-top: -10px;
     text-align: center;
 }
 
@@ -79,34 +102,12 @@ main {
     margin: 10px 0;
 }
 
-.hero .btn-principal {
-    background-color: #28a745;
-    color: white;
-    border: none;
-    padding: 15px 30px;
-    font-size: 1.2rem;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.hero .btn-principal:hover {
-    background-color: #218838;
-    transform: scale(1.05);
-}
-
 section {
-    padding: 60px 5%;
     text-align: center;
-    background-color: white;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: var(--cor-branca);
 }
 
 section h1 {
-    align-items:center;
-    text-align: center;
     font-size: 2.5rem;
     margin-bottom: 20px;
     font-weight: bold;
@@ -127,7 +128,7 @@ section h3 {
 }
 
 .vantagem, .funcionalidade, .faq-item {
-    background-color: #f9f9f9;
+    background-color: var(--cor-cinza-claro);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -136,13 +137,13 @@ section h3 {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.vantagem i, .funcionalidade i {
+.vantagem .icone-vantagem, .funcionalidade .icone-funcionalidade {
     font-size: 3rem;
-    color: #007bff;
+    color: var(--cor-acento);
     margin-bottom: 15px;
 }
 
-.vantagem h3, .funcionalidade h3 {
+.vantagem h3, .funcionalidade h3, .faq-item h3 {
     font-size: 1.5rem;
     margin: 10px 0;
     font-weight: bold;
@@ -153,24 +154,24 @@ section h3 {
     line-height: 1.6;
 }
 
-.faq-item h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    font-weight: bold;
+footer {
+    width: 100%;
+    background-color: var(--cor-cinza-escuro);
+    color: var(--cor-branca);
+    padding: 20px 5%;
+    box-sizing: border-box;
+    margin-top: auto;
 }
 
 .rodape-conteudo {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 20px 5%;
-    background-color: #333;
-    color: white;
 }
 
 .rodape-secao {
     flex: 1;
-    min-width: 200px;
+    min-width: 250px;
     margin-bottom: 20px;
 }
 
@@ -185,33 +186,17 @@ section h3 {
     line-height: 1.6;
 }
 
-.rodape-secao ul {
-    list-style: none;
-    padding: 0;
-}
-
-.rodape-secao ul li {
-    margin: 5px 0;
-}
-
-.rodape-secao ul li a {
-    color: white;
-    font-size: 0.9rem;
-}
-
-.rodape-secao ul li a:hover {
-    text-decoration: underline;
-}
-
 .social-links a {
-    color: white;
-    margin-right: 15px;
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    color: var(--cor-branca);
     font-size: 1.5rem;
     transition: color 0.3s, transform 0.3s;
 }
 
 .social-links a:hover {
-    color: #e3e3e3;
+    color: var(--cor-hover);
     transform: scale(1.1);
 }
 
@@ -245,11 +230,6 @@ section h3 {
 
     .hero .meio h3 {
         font-size: 1.25rem;
-    }
-
-    .hero .btn-principal {
-        font-size: 1rem;
-        padding: 10px 20px;
     }
 
     .vantagem, .funcionalidade, .faq-item {

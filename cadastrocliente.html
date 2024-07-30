@@ -10,22 +10,20 @@
 </head>
 
 <body>
-<a href="index.html"><ion-icon name="arrow-back-outline"></ion-icon></a>
+    
     <div class="container">
         <div class="form">
             <form action="PHP/cadcliente.php" method="post">
                 <div class="form-header">
-                    <div class="title">
-                        <h1>Login</h1>
-                    </div>
-                    <div class="login-botao">
-                        <button><a href="index.html">inicio</a></button>
+                    <div class="title-container">
+                        <a href="index.html" class="icon-link"><ion-icon name="arrow-back-outline"></ion-icon></a>
+                        <h1>Cadastro</h1>
                     </div>
                 </div>
 
                 <div class="input-group">
                     <div class="input-box">
-                        <label for="nome">nome</label>
+                        <label for="nome">Nome</label>
                         <input type="text" name="nome" id="nome" placeholder="digite seu nome">
                     </div>
                     <div class="input-box">
@@ -41,7 +39,7 @@
                         <input id="confirmesenha" type="password" name="confirmesenha" placeholder="Digite sua senha novamente" required>
                     </div>
                     <div class="input-box">
-                        <label for="">digite sua data de nascimento</label>
+                        <label for="">Digite sua data de nascimento</label>
                         <input type="date" name="nascimento" id="nascimento">
                     </div>
                 </div>
@@ -53,7 +51,7 @@
         </div>
     </div>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
