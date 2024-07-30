@@ -1,0 +1,31 @@
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: x-large;
+    margin: 0;
+    padding: 0;
+    background-color: #00095a;
+}
+header {
+    background-color: #00095a;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+.texto {
+    font-family: cambria, calibri;
+    font-size: normal;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20rem;
+}
+.espaco {
+    background-color: #fff;
+    border: 3px solid #ddd;
+    margin: -15rem;
+    padding: 10rem;
+    max-width: 6500px;
+    text-align: justify;
+    justify-content: justify;
+}
