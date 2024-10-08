@@ -51,7 +51,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 .side_item.active a {
     color: aliceblue;

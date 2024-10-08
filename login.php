@@ -2,7 +2,7 @@
 $email = $_POST['email'];
 $senha = $_POST['senha'];
 
-$con = mysqli_connect('localhost', 'root', '','projetoquestsise');
+$con = mysqli_connect('localhost', 'root', 'usbw','projetoquestsise');
 
 if ($con) {
     $query = "SELECT * FROM usuario WHERE email = '$email' AND senha = '$senha'";

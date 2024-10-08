@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário</title>
+    <link rel="stylesheet" href="CSS/calendario.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="calendario">
+        <div class="mes-ano">
+            <button onclick="voltarMes()"><i class="bi bi-caret-left-fill"></i></button>
+            <h2></h2>
+            <button onclick="avancarMes()"><i class="bi bi-caret-right-fill"></i></button>
+        </div>
+        <div class="dias-semana">
+            <h3>Domingo</h3>
+            <h3>Segunda</h3>
+            <h3>Terça</h3>
+            <h3>Quarta</h3>
+            <h3>Quinta</h3>
+            <h3>Sexta</h3>
+            <h3>Sábado</h3>
+        </div>
+        <div class="dias-numero">
+            
+        </div>
+    </div>
+    
+    <div id="taskForm" class="task-form">
+        <form id="taskFormElement" onsubmit="submitForm(event)">
+            <h2>Tarefa</h2>
+            <label for="taskName">Nome da Tarefa:</label>
+            <input type="text" id="taskName" name="taskName" required>
+            
+            <label for="startTime">Início:</label>
+            <input type="time" id="startTime" name="startTime" required>
+            
+            <label for="endTime">Fim:</label>
+            <input type="time" id="endTime" name="endTime" required>
+            
+            <label for="description">Descrição:</label>
+            <textarea id="description" name="description" required></textarea>
+            
+            <input type="hidden" id="taskDate" name="taskDate">
+            
+            <button type="submit">Salvar</button>
+            <button type="button" onclick="closeForm()">Cancelar</button>
+        </form>
+    </div>
+    </div>
+    <script src="PHP/JS/calendario.js"></script> 
+</html>

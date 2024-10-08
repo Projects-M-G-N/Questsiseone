@@ -62,4 +62,39 @@ function closeForm() {
 
 function submitForm(event) {
     event.preventDefault();
-    const formData = new FormData(document.getElementById('taskFormElement'));}
+    const form = document.getElementById('taskFormElement');
+    const formData = new FormData(form);
+
+    fetch('./php/cadtarefa.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.text())
+    .then(data => {
+        console.log(data);
+        alert(data);
+        closeForm();
+        fecharCardCalendario();
+    })
+    .catch(error => {
+        console.error('Erro:', error);
+    });
+}
+
+    function chamarStatus(dia, mes, ano) {
+
+        let janelaCard = document.querySelector('.janela-card');
+        janelaCard.classList.add('abrir');
+        abrirFormulario(dia, mes, ano);
+    
+        janelaCard.addEventListener('click', (e) => {
+            if(e.target.id == 'janela-card') {
+                janelaCard.classList.remove('abrir');
+            }
+        });
+    }
+    
+    function fecharCardCalendario() {
+        let janelaCard = document.querySelector('.janela-card');
+        janelaCard.classList.remove('abrir');
+    }
