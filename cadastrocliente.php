@@ -16,7 +16,7 @@
             <form action="cadcliente.php" method="post">
                 <div class="form-header">
                     <div class="title-container">
-                        <a href="index.html" class="icon-link"><ion-icon name="arrow-back-outline"></ion-icon></a>
+                        <a href="index.php" class="icon-link"><ion-icon name="arrow-back-outline"></ion-icon></a>
                         <h1>Cadastro</h1>
                     </div>
                 </div>

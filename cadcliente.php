@@ -7,7 +7,7 @@ if (isset($_COOKIE['apresentacao'])) {
     echo "Cookie 'apresentacao' não encontrado.";
 }
 
-$con = mysqli_connect('localhost', 'root', 'usbw', 'projetoquestsise');
+$con = mysqli_connect('localhost', 'root', '', 'projetoquestsise');
 
 $NOME = $_POST['nome'];
 $EMAIL = $_POST['email'];
@@ -27,7 +27,7 @@ if ($con) {
         $_SESSION['nome'] = $NOME;
         $_SESSION['email'] = $EMAIL;
 
-        echo "<a href='areatrabalho.html'>Área de trabalho</a>";
+        echo "<a href='areatrabalho.php'>Área de trabalho</a>";
     } else {
         echo "Erro ao inserir dados: " . mysqli_error($con);
     }

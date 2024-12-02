@@ -1,6 +1,6 @@
 <?php
    
-    $conn = new mysqli('localhost', 'root', 'usbw', 'projetoquestsise');
+    $conn = new mysqli('localhost', 'root', '', 'projetoquestsise');
     
     if ($conn->connect_error) {
         die("Conexão falhou: " . $conn->connect_error);
@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="CSS/tarefas.css">
 </head>
 <body>
-    <a href="areatrabalho.html" class="icon-link"><ion-icon name="arrow-back-outline"></ion-icon></a>
+    <a href="areatrabalho.php" class="icon-link"><ion-icon name="arrow-back-outline"></ion-icon></a>
     <h1>Visualizar Tarefas</h1>
     <table>
         <thead>

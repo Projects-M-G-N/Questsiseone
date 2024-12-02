@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <a href="areatrabalho.html" class="icon-link"><ion-icon name="arrow-back-outline"></ion-icon></a>
+    <a href="areatrabalho.php" class="icon-link"><ion-icon name="arrow-back-outline"></ion-icon></a>
     <div class="calendario">
         
         <div class="mes-ano">

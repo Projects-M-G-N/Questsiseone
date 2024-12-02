@@ -13,7 +13,7 @@
             <form action="reclamacoes.php" method="post">
                 <div class="form-header">
                     <div class="title">
-                        <a href="areatrabalho.html" class="icon-link"><ion-icon name="arrow-back-outline"></ion-icon></a>
+                        <a href="areatrabalho.php" class="icon-link"><ion-icon name="arrow-back-outline"></ion-icon></a>
                         <h1>Suporte</h1>
                     </div>
                 </div>

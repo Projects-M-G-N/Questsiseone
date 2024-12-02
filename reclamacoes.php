@@ -1,5 +1,5 @@
 <?php
-$conn = new mysqli('localhost', 'root', 'usbw', 'projetoquestsise');
+$conn = new mysqli('localhost', 'root', '', 'projetoquestsise');
 
 if ($conn->connect_error) {
     die("Erro de conexão: " . $conn->connect_error);

@@ -1,3 +1,20 @@
+:root {
+    --azul1: #03045E;
+    --azul2: #0077b6;
+    --azul3: #00b4d8;
+    --azul4: #90e0ef;
+    --azul5: #caf0f8;
+    --cor-primaria: #03155c;
+    --cor-secundaria: rgba(238, 238, 238, 0.75);
+    --cor-branca: #ffffff;
+    --cor-preta: #000000;
+    --cor-cinza: rgba(0, 0, 0, 0.75);
+    --cor-placeholder: rgba(0, 0, 0, 0.74);
+    --sombra-input: 1px 1px 6px rgba(0, 0, 0, 0.1);
+    --sombra-container: 5px 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -10,8 +27,30 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #8e8c8cde;
+    background-color: #0077b6;
 }
+
+a.icon-link {
+    display: inline-flex;
+    margin: 10px;
+    align-items: center;
+    color: var(--azul1);
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: var(--azul5);
+    padding: 0.5rem;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+a.icon-link:hover {
+    color: var(--cor-branca);
+    background-color: var(--azul3);
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
 
 .calendario {
     width: 60%;
@@ -61,6 +100,7 @@ body {
     grid-template-columns: repeat(7, 1fr);
     padding: 10px 0;
 }
+
 
 .dia {
     text-align: center;

@@ -21,7 +21,7 @@ main{
     justify-content: space-between;
     background-color: #140739;
     height: 100vh;
-    border-radius: 0px 18px 18px 0px;
+    width: 20%;
 
 }
 
@@ -37,21 +37,21 @@ main{
 }
 .side_item{
     padding: 14px;
-    border-radius: 8px;
     cursor: pointer;
+    color: white;
 }
 .side_item.active{
     background-color: rgb(31, 4, 86);
 }
 .side_item:hover:not(.active) {
     background-color: aliceblue;
+    color: #140739;
 }
 .side_item a {
     text-decoration:none ;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgb(255, 255, 255);
 }
 .side_item.active a {
     color: aliceblue;

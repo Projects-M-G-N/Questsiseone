@@ -253,7 +253,7 @@ footer {
             <h1>Questsise</h1>
         </div>
         <nav>
-            <a href="cadastrocliente.html">Cadastro</a>
+            <a href="cadastrocliente.php">Cadastro</a>
             <a href="login.html">Entrar</a>
         </nav>
     </header>
@@ -332,7 +332,7 @@ footer {
             <div class="rodape-secao">
                 <h4>Sobre Nós</h4>
                 <p>Somos uma empresa dedicada a oferecer as melhores soluções tecnológicas.</p>
-                <a href="contato.html">Contato</a>
+                <a href="contato.php">Contato</a>
             </div>
             
             <div class="rodape-secao">

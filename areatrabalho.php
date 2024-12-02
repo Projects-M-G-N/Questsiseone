@@ -10,7 +10,7 @@
     <nav id="sidebar">
         <ul id="side_itens">
             <li class="side_item active">
-            <a href="calendario.html">
+            <a href="calendario.php">
                 <i class=""></i>
                 <span class="intem-descrição">
                     calendário
@@ -26,7 +26,7 @@
                 </a>
             </li>
             <li class="side_item">
-                <a href="contato.html">
+                <a href="contato.php">
                     <i class=""></i>
                     <span class="intem-descrição">
                         Contato
@@ -34,10 +34,10 @@
                 </a>
             </li>
             <li class="side_item">
-                <a href="index.html">
+                <a href="logout.php">
                     <i class=""></i>
                     <span class="intem-descrição">
-                        Início
+                        Sair
                     </span>
                 </a>
             </li>
