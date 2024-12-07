@@ -170,6 +170,11 @@ footer {
     margin-top: auto;
 }
 
+.vantagem {
+    cursor: pointer;
+}
+
+
 .rodape-conteudo {
     display: flex;
     justify-content: space-between;
@@ -269,23 +274,24 @@ footer {
         <section class="vantagens">
             <h1>Vantagens da nossa ferramenta</h1>
             <div class="vantagens-conteudo">
-                <div class="vantagem">
+                <div class="vantagem" onclick="window.location.href='ferramentas.php';">
                     <span class="icone-vantagem">🔧</span>
                     <h3>Fácil de usar</h3>
                     <p>Nossa ferramenta é intuitiva e fácil de usar.</p>
                 </div>
-                <div class="vantagem">
+                <div class="vantagem" onclick="window.location.href='ferramentas.php';">
                     <span class="icone-vantagem">⚙️</span>
                     <h3>Alta performance</h3>
                     <p>Desempenho de alta qualidade para suas necessidades.</p>
                 </div>
-                <div class="vantagem">
+                <div class="vantagem" onclick="window.location.href='ferramentas.php';">
                     <span class="icone-vantagem">🔒</span>
                     <h3>Segurança</h3>
                     <p>Proteção total para seus dados.</p>
                 </div>
             </div>
         </section>
+
 
         <section class="funcionalidades">
             <h1>Funcionalidades Principais</h1>
@@ -330,9 +336,8 @@ footer {
     <footer>
         <div class="rodape-conteudo">
             <div class="rodape-secao">
-                <h4>Sobre Nós</h4>
-                <p>Somos uma empresa dedicada a oferecer as melhores soluções tecnológicas.</p>
-                <a href="contato.php">Contato</a>
+                <a href="sobrenos.php">Sobre Nós</a> <br>
+                <a href="contato.php">Contato com o Suporte</a>
             </div>
             
             <div class="rodape-secao">

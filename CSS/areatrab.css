@@ -1,65 +1,102 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-*{
+:root {
+    --primary-color: #140739;
+    --secondary-color: #1f0456;
+    --hover-bg-color: aliceblue;
+    --hover-text-color: var(--primary-color);
+    --text-color: white;
+    --active-bg-color: var(--secondary-color);
+    --active-text-color: var(--hover-bg-color);
+    --font-family: 'Poppins', sans-serif;
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins',sans-serif;
-}
-body{
-    display: flex;
-    min-height: 100px;
+    font-family: var(--font-family);
 }
 
-main{
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color:#007bff;
+}
+
+main {
     padding: 20px;
+    flex: 1;
 }
 
 #sidebar {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #140739;
+    background-color: var(--primary-color);
     height: 100vh;
     width: 20%;
-
+    min-width: 200px;
+    overflow-y: auto;
 }
 
-#sidebar_content{
-    padding: 12px;
+#sidebar_content {
+    padding: 16px;
 }
 
-#side_itens{
+#side_itens {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 12px;
     list-style: none;
+    margin-top: 16px;
 }
-.side_item{
-    padding: 14px;
+
+.side_item {
+    padding: 12px 16px;
     cursor: pointer;
-    color: white;
+    color: var(--text-color);
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s; 
 }
-.side_item.active{
-    background-color: rgb(31, 4, 86);
-}
-.side_item:hover:not(.active) {
-    background-color: aliceblue;
-    color: #140739;
-}
+
 .side_item a {
-    text-decoration:none ;
+    text-decoration: none;
     display: flex;
     align-items: center;
-    justify-content: center;
+    gap: 8px; 
+    color: inherit;
 }
+
 .side_item.active a {
-    color: aliceblue;
+    color: inherit;
 }
+
 .side_item a i {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 20px ;
-    height: 20px ;
+    width: 24px;
+    height: 24px;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    #sidebar {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 10px;
+        overflow-x: auto;
+    }
+
+    #side_itens {
+        flex-direction: row;
+        gap: 8px;
+    }
+
+    .side_item {
+        padding: 8px 12px;
+    }
 }

@@ -9,7 +9,7 @@
 <body>
     <nav id="sidebar">
         <ul id="side_itens">
-            <li class="side_item active">
+            <li class="side_item">
             <a href="calendario.php">
                 <i class=""></i>
                 <span class="intem-descrição">

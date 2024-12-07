@@ -7,7 +7,7 @@ if (isset($_COOKIE['apresentacao'])) {
     echo "Cookie 'apresentacao' não encontrado.";
 }
 
-$con = mysqli_connect('localhost', 'root', 'usbw', 'projetoquestsise');
+$con = mysqli_connect('localhost', 'root', '', 'projetoquestsise');
 
 $NOME = $_POST['nome'];
 $EMAIL = $_POST['email'];

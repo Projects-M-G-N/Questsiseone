@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$conn = mysqli_connect('localhost', 'root', 'usbw', 'projetoquestsise');
+$conn = mysqli_connect('localhost', 'root', '', 'projetoquestsise');
 
 $nome = $_POST['nome'];
 $inicio = $_POST['inicio'];
