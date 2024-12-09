@@ -20,9 +20,7 @@ nome varchar (100) not null,
 categorias varchar (100) not null,
 data_inicio date not null,
 data_final date not null,
-descricao varchar (200),
-cod_status int not null,
-foreign key (cod_status) references status(codigo));
+descricao varchar (200));
 
 create table projetos (
 codigo int auto_increment primary key,

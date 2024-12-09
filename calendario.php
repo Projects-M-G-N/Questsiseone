@@ -30,7 +30,7 @@
         </div>
     </div>
     <div id="taskForm" class="task-form">
-        <form action="form.php" id="taskFormElement" onsubmit="submitForm(event)">
+        <form action="cadtarefa.php" id="taskFormElement" onsubmit="submitForm(event)">
             <h2>Tarefa</h2>
             <label for="taskName">Nome da Tarefa:</label>
             <input type="text" id="nome" name="nome" required>
